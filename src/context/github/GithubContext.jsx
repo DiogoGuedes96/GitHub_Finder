@@ -6,6 +6,7 @@ const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN
 export const GithubProvider = ({ children }) => {
   const initialState = {
     users: [],
+    user: {},
     loading: false,
   }
   const [state, dispatch] = useReducer(githubReducer, initialState)

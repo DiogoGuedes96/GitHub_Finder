@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function UserItem({ user: { login, avatar_url } }) {
   return (
-    <Link to={`/users/${login}`}>
+    <Link to={`/user/${login}`}>
       <div className="card shadow-md compact side bg-base-100">
         <div className="flex-row items-center space-x-4 card-body">
           <div>
